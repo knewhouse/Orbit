@@ -291,12 +291,15 @@ height: 95px;
 /*--------------------
 4.1a. About
 --------------------*/
+.main-timeline {
+    margin-top: 20px;
+}
 .main-timeline .timeline{
     padding: 30px 60px;
     position: relative;
 }
 .main-timeline .timeline:first-child{
-    padding-top: 0;
+    padding-top: 26px;
 }
 .main-timeline .timeline:last-child{
     padding-bottom: 0;
