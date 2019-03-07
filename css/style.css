@@ -87,7 +87,10 @@ section {
 /*--------------------
 2. Navigation
 --------------------*/
-
+.navbar-header {
+    height:80px;
+    background-color: #fff;
+}
 .navbar-default {
 	background-color: #222;
 	border-color: transparent
@@ -104,14 +107,15 @@ section {
 	border-color: rgba(255,255,255,.02)
 }
 .navbar-default .navbar-toggle {
-	background-color: #fed136;
-	border-color: #fed136
+	background-color: rgba(255,127,0,0.8);
+    border-color: rgba(255,127,0,0.8);
+    border-radius: 0px;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #fff
 }
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
-	background-color: #fed136
+	background-color: rgba(255,127,0,0.8);
 }
 .navbar-default .nav li a {
 	font-family: "Roboto",sans-serif;
@@ -121,25 +125,25 @@ section {
 	color:#666
 }
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
-	color: #fed136;
+	color: rgba(255,127,0,0.8);
 	outline: 0
 }
 
 .navbar-default .navbar-nav>.active>a {
 	border-radius: 0;
 	color: #fff;
-	background-color: #fed136
+	background-color: rgba(255,127,0,0.8);
 }
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
 	color: #fff;
-	background-color: #fec503
+	background-color: rgba(255,127,0,0.8);
 }
 
 @media (min-width:768px) {
 	.navbar-default
 	{
 		background-color: #FFFFFF;
-		padding: 10px 0 42px;
+		padding: 10px 0 34px 0;
 		-webkit-transition:padding .3s;
 		-moz-transition:padding .3s;
 		transition:padding .3s;
@@ -152,11 +156,14 @@ section {
 		transition:all .3s
 	}
 	.navbar-default .navbar-nav>.active>a {
-		border-radius: 3px
+		border-radius: 0px;
 	}
 	.navbar-default.navbar-shrink {
-		background-color: #222;
-		padding: 10px 0
+		background-color: #fff;
+		padding: 10px 0 34px 0;
+        -webkit-box-shadow: 0px 3px 6px -2px rgba(72,72,72,1);
+        -moz-box-shadow: 0px 3px 6px -2px rgba(72,72,72,1);
+        box-shadow: 0px 3px 6px -2px rgba(72,72,72,1);
 	}
 	.navbar-default.navbar-shrink .navbar-brand {
 		font-size: 1.5em
@@ -246,7 +253,7 @@ header .intro-text .intro-heading {
     font-size: 15px;
     font-weight: 300;
     line-height: 25px;
-    margin: 20px 100px 60px 100px;
+    margin: 20px;
 }
 
 /*--------------------
