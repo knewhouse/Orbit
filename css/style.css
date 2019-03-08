@@ -83,7 +83,10 @@ a, a:hover, a:focus, a:active, a.active {
 section {
     padding: 70px 0;
 }
-
+/* Space above row */
+ .top-buffer { 
+    margin-top: 30px; 
+}
 /*--------------------
 2. Navigation
 --------------------*/
@@ -407,66 +410,128 @@ height: 95px;
     }
 }
 /*--------------------
-4.2. Skills
+4.2. Services
 --------------------*/
-
-.skills-text h2 {
-	margin: 0 0 30px;
-}
-
-.skillbar-item {
-    margin-bottom: 30px;
-}
-
-.skillbar {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-.skillbar-score {
-background-color: #dfdfdf;
-    padding: 7px;
-    text-align: center;
-    color: #000000;
-    font-weight: 300;
-    float: right;
-    width: 50px;
-    height: 40px;
-    vertical-align: middle;
- }
-
-.skillbar-score .score {
-    font-size: 20px;
-}
-
-.skillbar-score .percent {
-    font-size: 13px;
-}
-
-.skillbar-bar {
-display: block;
-    background-color: #dfdfdf;
-    height: 3px;
-    width: 100%;
-}
-
-.skillbar h3 {
-	font-weight: 600;
-    font-size: 13px;
-    text-transform: uppercase;
+/*.serviceBox { 
+    margin:10px 14px 0 14px;
+    }
+.serviceBox .title{
     color: #3A3A3A;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 20px 24px;
+    font-size: 17px;
+    font-weight: 500;
     letter-spacing: 2px;
-margin: 0;
-    padding: 12px 0;
+    line-height: 26px
+}
+.serviceBox .service-content{
+    padding: 25px 20px 25px 50px;
+    border-top: 2px solid #007cc2;
+    border-right: 2px solid #007cc2;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    border-radius: 6px;
+}
+.serviceBox:hover .service-content{
+    border-top-color: #ff7f00;
+    border-right-color: #ff7f00;
+}
+.serviceBox .service-content:before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #eee;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .service-content:before{
+    width: 50%;
+    background: #ff7f00;
+    border-radius: 6px;
+}
+.serviceBox .description{
+    font-size: 14px;
+    color: #797979;;
+    line-height: 25px;
+    margin: 0;
+}
+.serviceBox .service-icon{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    font-size: 25px;
+    color: #007cc2;
+    border: 1px solid #007cc2;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .service-icon{
+    border-color: #ff7f00;
+    color: #ff7f00;
+}
+@media only screen and (max-width:990px){
+    .serviceBox{ 
+        margin: 30px; 
+}
+}
+*/
+.serviceBox{
+    text-align: center;
+    margin-top:30px
+}
+.serviceBox .service-icon{
+    width: 96px;
+    height: 96px;
+    line-height: 92px;
+    font-size: 42px;
+    border: 1px solid #007cc2;
+    border-radius: 50%;
+    margin:0 auto 10px;
+    color: #007cc2;
+}
+.serviceBox .service-icon > i{
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .service-icon > i{
+    transform:scale(0.8);
+    transition: all 0.3s ease 0s;
+}
+.serviceBox .service-content h3{
+    font-size: 18px;
+    font-weight:400;
+    margin-bottom: 20px;
+    color:#727cb6;
+}
+.serviceBox.green .service-content h3{
+    color: #008b8b;
+}
+.serviceBox.orange .service-content h3{
+    color:#e67e22;
+}
+.serviceBox.pink .service-content h3{
+    color: #ed687c;
+}
+.serviceBox .service-content p{
+    color: hsl(0, 0%, 38%);
+    font-size: 14px;
+    line-height: 24px;
+}
+@media screen and (max-width: 990px){
+    .serviceBox{
+        margin: 20px 20px 30px 20px;
+    }
 }
 
-.skillbar-percent {
-    color: #fff;
-    background-color: #000000;
-    float: left;
-    height: 3px;
-}
+
+
 
 /*--------------------
 4.3. Portfolio
@@ -602,7 +667,7 @@ figure.effect-bubba:hover p {
 }
 
 .light-bg {
-	background-color: #f8f8f8;
+	background-color: #f5f5f5;
 }
 
 .overlay-dark:before, .overlay-light:before {
