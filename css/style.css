@@ -238,10 +238,11 @@ header .intro-text .intro-heading {
 @media (min-width: 768px) {
 	header .intro-text .intro-heading {
 	    text-transform: uppercase;
-	    font-weight: 700;
-	    font-size: 75px;
-	    line-height: 75px;
+	    font-weight: 600;
+	    font-size: 65px;
+	    line-height: 70px;
 	    margin-bottom: 50px;
+        text-shadow: 1px 2px 6px #484848;
 	}
 }
 
@@ -906,10 +907,10 @@ font-size: 11px;
     border-color: #007cc2;
     font-family: "Open Sans",sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 3px;
     font-size: 18px;
-    padding: 16px 34px;
+    padding: 14px 34px;
 }
 
 /* Back to top button
@@ -967,32 +968,41 @@ and (max-width : 480px) {
 --------------------*/
 
 .lwt {
-    background-image: url(../images/demo/world-of-speed-interior_atomic-lounge.jpg);
-    background-repeat: none;
-    background-attachment: scroll;
-    background-position: center -150px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    padding: 0;
     text-align: center;
     color: #fff;
 }
-.lwt::after {
+.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/demo/wos_interior_atomic-lounge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
+/*.lwt::after {
     content: "";
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(120deg, #eaee44, #33d0ff);
     opacity: .7;
+    z-index: 1;
 }
+.lwt > * {
+    z-index: 100;
+} */
 .lwt-text {
     margin: 0 0 50px;
 }
 .lwt .lwt-heading {
-    padding-top: 50px;
+    padding-top: 86px;
     padding-bottom: 50px;
     font-family: "Playfair Display",sans-serif;
     font-style: italic;
