@@ -929,15 +929,16 @@ font-size: 11px;
     font: 11px/100% Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 3px;
     color: #FFFFFF;
-    background: #A9A9B1;
+    background: #007cc2;
     /* background color transition */
     -webkit-transition: 1s;
     -moz-transition: 1s;
     transition: 1s;
 }
 #back-top a:hover {
-    background: #fed136;
+    border: 2px solid #ff7f00;
 }
 /* arrow icon (span tag) */
 #back-top i {
