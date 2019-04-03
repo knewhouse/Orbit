@@ -1023,6 +1023,7 @@ and (max-width : 480px) {
     margin: 0 auto;
     float: none !important;
 }
+
 .carousel {
     margin: 50px auto;
     padding: 0 70px;

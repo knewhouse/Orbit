@@ -8,7 +8,7 @@ $(window).scroll(function() {
 });
 
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('a.page-scroll').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -23,7 +23,7 @@ $(function() {
 });
 
 // Owl carousel
-$('.owl-carousel').owlCarousel({
+/* $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
@@ -41,7 +41,11 @@ $('.owl-carousel').owlCarousel({
             items:5
         }
     }
-})
+}) */
+
+$('#myCarousel').carousel({
+  interval: 2800
+ })
 
   // hide #back-top first
   $("#back-top").hide();
