@@ -25,13 +25,6 @@ $(function() {
 // Initiate the wowjs animation library
 new WOW().init();
 
-// Initiate superfish on nav menu
-$('.nav-menu').superfish({
-  animation: {
-    opacity: 'show'
-  },
-  speed: 400
-});
 
 // Porfolio - uses the magnific popup jQuery plugin
 $('.portfolio-popup').magnificPopup({
