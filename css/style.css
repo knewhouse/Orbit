@@ -657,7 +657,7 @@ figure.effect-bubba:hover p {
 --------------------*/
 
 .dark-bg {
-    background: #323232;
+    background: #444444;
     color: #fff;
 }
 
@@ -1221,4 +1221,99 @@ section#venue-info {
     .gal-container .modal-content{
         height:250px;
     }
+}
+/* ================
+Events
+=================== */
+section#events {
+    padding-bottom: 0;
+}
+#events .section-title h2,
+#events .section-title p {
+    color: #fff;
+}
+.events ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.events ul li {
+    float: left;
+    min-height: 100%;
+    width: 25%;
+    background-color: #000;
+    list-style: none;
+}
+.events figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0!important;
+}
+.events figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.events figure:hover img, .events figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.events figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 97, 132, 0.85);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.events figcaption a {
+    color: #fff;
+    text-decoration: none;
+}
+.events figcaption a:hover, .events figcaption a:focus {
+    color: #73d0da
+}
+.events figure:hover figcaption, .events figure:focus figcaption {
+    opacity: 1
+}
+.visible {
+    opacity: 1
+}
+.events figure.cs-hover figcaption {
+    opacity: 1
+}
+.events figcaption i {
+    font-size: 35px
+}
+.events figcaption p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+}
+.events figcaption .caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.events figure:hover figcaption .caption-content, .events figure:focus figcaption .caption-content {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
 }
