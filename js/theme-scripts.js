@@ -23,6 +23,7 @@ $(function() {
 });
 
 
+
 // Owl carousel
 /* $('.owl-carousel').owlCarousel({
     loop:true,
@@ -72,4 +73,11 @@ $('#myCarousel').carousel({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
+});
+  /***************** Fancybox ******************/
+
+$(document).ready(function() {
+  $("a.single_image").fancybox({
+    padding: 4,
+  });
 });
