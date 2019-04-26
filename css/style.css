@@ -1267,7 +1267,7 @@ section#events {
     padding: 25% 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(63, 97, 132, 0.85);
+    background-color: rgba(0, 124, 194, 0.85);
     text-align: center;
     font-size: 15px;
     opacity: 0;
@@ -1279,7 +1279,7 @@ section#events {
     text-decoration: none;
 }
 .events figcaption a:hover, .events figcaption a:focus {
-    color: #73d0da
+    color: #ff7f00
 }
 .events figure:hover figcaption, .events figure:focus figcaption {
     opacity: 1
