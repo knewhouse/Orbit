@@ -41,6 +41,7 @@ Import Google Fonts
 body {
   margin: 0px;
     font-family: "Open Sans", Sans-serif;
+    color: #797979;
 }
 
 h1,
@@ -523,7 +524,7 @@ height: 95px;
     color: #ed687c;
 }
 .serviceBox .service-content p{
-    color: hsl(0, 0%, 38%);
+    color:inherit;
     font-size: 15px;
     line-height: 24px;
 }
@@ -616,15 +617,16 @@ figure.effect-bubba figcaption::after {
 
 figure.effect-bubba h2 {
     color: #fff;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     text-transform: uppercase;
-	padding-top: 30%;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,-20px,0);
-	transform: translate3d(0,-20px,0);
+    padding-top: 35%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
 }
+Co
 
 figure.effect-bubba p {
     color: #fff;
@@ -1222,6 +1224,36 @@ section#venue-info {
         height:250px;
     }
 }
+
+
+/* ================
+Birthday Party
+=================== */
+
+.bday-includes {
+    text-align: left;
+    padding-top: 20px;
+}
+.bday-includes li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.bday-includes p {
+    margin: 20px 0;
+}
+.bday-includes p.bday-title {
+    font-weight: bold;
+}
+
+/* flyer button */
+.bday a.btn.btn-xl {
+    margin-top: 50px;
+}
+
+
+
 /* ================
 Events
 =================== */
