@@ -796,7 +796,10 @@ section#contact .form-group input, section#contact .form-group textarea {
 .contact i {
     margin-right: 5px;
 }
-
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}
 /*--------------------
 5. Footer
 --------------------*/
